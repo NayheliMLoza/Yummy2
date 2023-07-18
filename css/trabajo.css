@@ -1,0 +1,408 @@
+@import "https://fonts.googleapis.com/css2?family=VT323&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: aliceblue;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+.header img {
+  margin: auto 0 auto 20px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+header {
+  background-image: url(../img/trabajo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 55rem;
+  animation-name: fotofondo;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fotofondo{
+  from{
+    background-image: url(../img/inicio.png);
+  }
+  to{
+    background-image: url(../img/menu.png);
+  }
+}
+
+
+
+.checkbtn {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.menu-nav {
+  display: flex;
+  list-style: none;
+  margin-right: 50px;
+}
+.menu-nav li {
+  margin: auto 10px;
+}
+.menu-nav li a {
+  text-decoration: none;
+  color: white;
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+.menu-nav li a:hover {
+  text-decoration: underline;
+  background-color: #ffde00;
+  color: black;
+}
+
+.activo {
+  background-color: #ffde00;
+}
+
+.menu2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ffde00;
+  list-style: none;
+  padding: 10px 0;
+}
+.menu2 li a {
+  text-decoration: none;
+  color: black;
+  font-family: "VT323", monospace;
+  font-size: 2.5rem;
+  padding-right: 50px;
+}
+.menu2 a:hover {
+  text-decoration: underline;
+}
+
+.unete {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  padding-right: 50px;
+}
+.unete img {
+  width: 50%;
+  padding-right: 50px;
+}
+.unete h3 {
+  font-size: 3rem;
+  font-family: "VT323", monospace;
+  width: 50%;
+}
+
+.puestos-v {
+  margin: 40px 0;
+  background-color: #ffde00;
+  color: #000000;
+}
+.puestos-v h2 {
+  font-family: "VT323", monospace;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.puestos-va {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.puestos {
+  border: 2px solid #000000;
+  border-radius: 20px;
+  padding: 2rem;
+  overflow: hidden;
+  width: 400px;
+  height: 640px;
+  margin-bottom: 2rem;
+  transition: all 2s ease;
+}
+
+.puestos:hover{
+  background-color: #000000;
+  color:#ffde00;
+  border:  solid 3px white;
+}
+
+.puestos h2 {
+  font-size: 2rem;
+  font-family: "VT323", monospace;
+  padding-bottom: 0.5em;
+}
+.puestos ul {
+  text-align: start;
+  width: 330px;
+  margin-left: 1rem;
+}
+.puestos img {
+  width: 200px;
+  height: 200px;
+  margin-left: 50px;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "VT323", monospace;
+  padding-bottom: 0.5em;
+}
+
+.text-b {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.beneficios {
+  color: #ffde00;
+  font-family: "VT323", monospace;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text-2 {
+  width: 300px;
+  height: 450px;
+  text-align: center;
+  font-family: "Port Lligat Slab", serif;
+  font-size: 1.2rem;
+  color: #ffde00;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.text-2 img {
+  width: 140px;
+}
+
+.forms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  background-color: #ffde00;
+  color: #000000;
+  padding: 30px;
+}
+.forms img {
+  width: 50%;
+}
+.forms h2 {
+  font-size: 3rem;
+  font-family: "VT323", monospace;
+  padding-bottom: 30px;
+}
+.forms label {
+  font-size: 2rem;
+  font-family: "Port Lligat Slab", serif;
+}
+.forms input {
+  border: solid 2px #000000;
+  width: 500px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 1rem;
+  padding: 10px;
+}
+.forms button {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-family: "VT323", monospace;
+  border: solid 3px #000000;
+  background-color: #ffde00;
+}
+.forms button:hover {
+  background-color: #000000;
+  border: solid 3px white;
+  color: white;
+}
+
+.form-1 {
+  text-align: center;
+  padding-left: 150px;
+}
+
+.testi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.testimonios {
+  width: 350px;
+  text-align: center;
+  font-family: "Port Lligat Slab", serif;
+  font-size: 1.2rem;
+  color: #ffde00;
+}
+.testimonios img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+.testimonios h3 {
+  font-size: 1.7rem;
+  font-family: "VT323", monospace;
+}
+
+.vacio {
+  height: 50px;
+  background-color: #ffde00;
+  margin-top: 40px;
+  text-align: center;
+  color: #000000;
+  padding-top: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 0;
+  background-color: #000000;
+  color: #ffde00;
+  margin-top: 10px;
+}
+.footer h3 {
+  font-size: 1.5rem;
+  padding-top: 25px;
+  text-decoration: underline;
+}
+.footer li {
+  list-style: none;
+  padding-top: 15px;
+}
+
+.redes ul {
+  display: flex;
+  font-size: 2rem;
+}
+.redes img {
+  width: 100px;
+}
+.redes h2 {
+  font-family: "VT323", monospace;
+  font-size: 3rem;
+  color: #ffde00;
+}
+.redes li a {
+  padding-right: 20px;
+}
+
+.copy {
+  background-color: #535252;
+  clear: both;
+  color: #b6b4b4;
+  text-align: center;
+}
+
+@media screen and (max-width:760px) {
+
+  /*menu */
+  #check:checked ~ .menu-nav {
+      display: block;
+  }
+
+  .checkbtn {
+      display: block;
+      padding-right: 30px;
+  }
+  
+  .menu-nav{
+      display: none;
+      position: absolute;
+      top: 18%;
+      left: 0%;
+      background:  rgb(12, 12, 12);
+      width: 100%;
+      height: 400px;
+      }
+  
+  .menu-nav li{
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      }
+
+
+  .header img{
+      width: 40px;
+  }
+
+  header{
+      height: 12rem;
+  }
+
+  /*menu 2*/
+  .menu2 li a{
+      font-size: 1.3rem;
+      padding-right: 20px;
+  }
+
+  .unete h3 {
+    font-size: 2rem;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .unete img {
+    width: 100%;
+  }
+  
+  .forms img {
+    width: 100%;
+  }
+  
+  .form-1 {
+    padding-left: 0px;
+  }
+
+  .forms h2 {
+    font-size: 2rem;
+  }
+  .forms label {
+    font-size: 1.5rem;
+  }
+  .forms input {
+    width: 300px;
+    height: 30px;
+  }
+}
+
+
+/*# sourceMappingURL=trabajo.css.map */
